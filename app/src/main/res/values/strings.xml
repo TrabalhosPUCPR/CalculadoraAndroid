@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="calc_AC">AC</string>
+    <string name="calc_plusminus">+/-</string>
+    <string name="calc_percentage">%</string>
+    <string name="calc_division">÷</string>
+    <string name="calc_minus">-</string>
+    <string name="calc_plus">+</string>
+    <string name="calc_slash">/</string>
+    <string name="calc_equals">=</string>
+</resources>
