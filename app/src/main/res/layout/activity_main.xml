@@ -8,11 +8,21 @@
     android:paddingStart="20dp"
     android:paddingEnd="20dp">
 
-
     <TextView
+        android:id="@+id/firstEq"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#BA616161"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="7sp"/>
+
+    <TextView
+        android:id="@+id/mainEq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
         android:textSize="20sp"
         android:background="@drawable/maintext"
         android:textAlignment="textEnd" />
@@ -26,18 +36,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/calc_AC"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_margin="@dimen/calc_buttonsMargin"
             style="@style/buttonStyle"/>
         <Button
-            android:id="@+id/calc_plusMinus"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/calc_plusminus"
-            android:layout_weight="1"
-            android:layout_margin="@dimen/calc_buttonsMargin"/>
-        <Button
-            android:id="@+id/calc_percentage"
+            android:id="@+id/calc_mod"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/calc_percentage"
@@ -163,7 +166,7 @@
             android:layout_weight="2"
             android:layout_margin="@dimen/calc_buttonsMargin"/>
         <Button
-            android:id="@+id/calc_slash"
+            android:id="@+id/calc_dot"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/calc_slash"

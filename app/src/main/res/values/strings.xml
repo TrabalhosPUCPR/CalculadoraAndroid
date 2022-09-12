@@ -6,6 +6,6 @@
     <string name="calc_division">÷</string>
     <string name="calc_minus">-</string>
     <string name="calc_plus">+</string>
-    <string name="calc_slash">/</string>
+    <string name="calc_slash">.</string>
     <string name="calc_equals">=</string>
 </resources>
