@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             resetView();
-            secondText.setText(Stringfy(calculator.getFirstNumber()) + " " + calculator.operator.value + " " + Stringfy(calculator.getSecondNumber()));
-            mainText.setText(OPERATORS.EQUAL.value + " " + Stringfy(calculator.calculate()));
+            secondText.setText(stringfy(calculator.getFirstNumber()) + " " + calculator.operator.value + " " + stringfy(calculator.getSecondNumber()));
+            mainText.setText(OPERATORS.EQUAL.value + " " + stringfy(calculator.calculate()));
         });
         calc_mainButtons.get(2).setOnClickListener(view -> {
             calculator.doubleMode = true;
@@ -110,15 +110,15 @@ public class MainActivity extends AppCompatActivity {
 
     void updateView(){
         if (calculator.currentNumber){
-            secondText.setText(Stringfy(calculator.getFirstNumber()) + " " + calculator.operator.value);
-            mainText.setText(Stringfy(calculator.getSecondNumber()));
+            secondText.setText(stringfy(calculator.getFirstNumber()) + " " + calculator.operator.value);
+            mainText.setText(stringfy(calculator.getSecondNumber()));
         }else{
             secondText.setText("");
-            mainText.setText(Stringfy(calculator.getFirstNumber()));
+            mainText.setText(stringfy(calculator.getFirstNumber()));
         }
     }
 
-    private String Stringfy(double number){
+    private String stringfy(double number){
         if(number == (long)number) return String.valueOf((long)number);
         else return String.valueOf(number);
     }
